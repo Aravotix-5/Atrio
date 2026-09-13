@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admin - Atrio</title>
+<meta name="description" content="Atrio admin dashboard.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#12554a">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav" data-nav></header>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1 class="h-lg">Admin</h1>
+    <p class="lede" data-admin-greeting>Requests, quotes, services, projects and payments.</p>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid--3 mb-2" data-overview></div>
+
+      <div class="tabs" role="tablist" aria-label="Admin sections">
+        <button class="tab" role="tab" id="t-requests" aria-controls="p-requests" aria-selected="true" data-tab="requests">Requests</button>
+        <button class="tab" role="tab" id="t-quotes" aria-controls="p-quotes" aria-selected="false" data-tab="quotes">Quotes</button>
+        <button class="tab" role="tab" id="t-projects" aria-controls="p-projects" aria-selected="false" data-tab="projects">Projects</button>
+        <button class="tab" role="tab" id="t-payments" aria-controls="p-payments" aria-selected="false" data-tab="payments">Payments</button>
+        <button class="tab" role="tab" id="t-services" aria-controls="p-services" aria-selected="false" data-tab="services">Services</button>
+        <button class="tab" role="tab" id="t-customers" aria-controls="p-customers" aria-selected="false" data-tab="customers">Customers</button>
+        <button class="tab" role="tab" id="t-settings" aria-controls="p-settings" aria-selected="false" data-tab="settings">Settings</button>
+      </div>
+
+      <div id="p-requests" role="tabpanel" aria-labelledby="t-requests" data-panel="requests"></div>
+      <div id="p-quotes" role="tabpanel" aria-labelledby="t-quotes" data-panel="quotes" hidden></div>
+      <div id="p-projects" role="tabpanel" aria-labelledby="t-projects" data-panel="projects" hidden></div>
+      <div id="p-payments" role="tabpanel" aria-labelledby="t-payments" data-panel="payments" hidden></div>
+      <div id="p-services" role="tabpanel" aria-labelledby="t-services" data-panel="services" hidden></div>
+      <div id="p-customers" role="tabpanel" aria-labelledby="t-customers" data-panel="customers" hidden></div>
+      <div id="p-settings" role="tabpanel" aria-labelledby="t-settings" data-panel="settings" hidden></div>
+    </div>
+  </section>
+</main>
+
+<dialog data-dialog aria-labelledby="dialog-title">
+  <div class="modal__head">
+    <h2 id="dialog-title">Details</h2>
+    <button class="modal__close" type="button" data-close aria-label="Close">&times;</button>
+  </div>
+  <div class="modal__body" data-dialog-body></div>
+  <div class="modal__foot" data-dialog-foot></div>
+</dialog>
+
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/admin.js"></script>
+</body>
+</html>

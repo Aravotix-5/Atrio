@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Create an account - Atrio</title>
+<meta name="description" content="Create an Atrio account to follow your project requests, review quotes and pay securely.">
+<meta name="theme-color" content="#12554a">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav" data-nav></header>
+
+<main id="main" class="wrap auth">
+  <h1 class="h-lg">Create your account</h1>
+  <p class="lede">Use the same email you put on your project request and it will be waiting for you.</p>
+
+  <form data-auth-form data-mode="signup" novalidate>
+    <div data-form-notice></div>
+    <div class="field">
+      <label class="field__label" for="name">Your name</label>
+      <input class="input" id="name" name="name" type="text" autocomplete="name" required>
+      <span class="field__error" data-error-for="name"></span>
+    </div>
+    <div class="field">
+      <label class="field__label" for="email">Email</label>
+      <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+      <span class="field__error" data-error-for="email"></span>
+    </div>
+    <div class="field">
+      <label class="field__label" for="password">Password</label>
+      <span class="field__hint">At least 10 characters.</span>
+      <input class="input" id="password" name="password" type="password" autocomplete="new-password" required minlength="10">
+      <span class="field__error" data-error-for="password"></span>
+    </div>
+    <button class="btn btn--primary btn--block" type="submit">Create account</button>
+  </form>
+
+  <p class="mt-2">Already have one? <a href="/login">Log in</a></p>
+</main>
+
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Log in - Atrio</title>
+<meta name="description" content="Log in to your Atrio account to see your projects, quotes and payment status.">
+<meta name="theme-color" content="#12554a">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav" data-nav></header>
+
+<main id="main" class="wrap auth">
+  <h1 class="h-lg">Log in</h1>
+  <p class="lede">See your projects, quotes and payment status.</p>
+
+  <form data-auth-form data-mode="login" novalidate>
+    <div data-form-notice></div>
+    <div class="field">
+      <label class="field__label" for="email">Email</label>
+      <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+      <span class="field__error" data-error-for="email"></span>
+    </div>
+    <div class="field">
+      <label class="field__label" for="password">Password</label>
+      <input class="input" id="password" name="password" type="password" autocomplete="current-password" required>
+      <span class="field__error" data-error-for="password"></span>
+    </div>
+    <button class="btn btn--primary btn--block" type="submit">Log in</button>
+  </form>
+
+  <p class="mt-2">New here? <a href="/signup">Create an account</a></p>
+</main>
+
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/auth.js"></script>
+</body>
+</html>

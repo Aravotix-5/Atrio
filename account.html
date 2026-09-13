@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your account - Atrio</title>
+<meta name="description" content="Your Atrio projects, quotes, requests and payment status.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#12554a">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav" data-nav></header>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1 class="h-lg">Your account</h1>
+    <p class="lede" data-greeting>Your projects, quotes and payments.</p>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div data-page-notice></div>
+
+      <div class="tabs" role="tablist" aria-label="Account sections">
+        <button class="tab" role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true" data-tab="projects">Projects</button>
+        <button class="tab" role="tab" id="tab-quotes" aria-controls="panel-quotes" aria-selected="false" data-tab="quotes">Quotes</button>
+        <button class="tab" role="tab" id="tab-requests" aria-controls="panel-requests" aria-selected="false" data-tab="requests">Requests</button>
+        <button class="tab" role="tab" id="tab-payments" aria-controls="panel-payments" aria-selected="false" data-tab="payments">Payments</button>
+      </div>
+
+      <div id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" data-panel="projects"></div>
+      <div id="panel-quotes" role="tabpanel" aria-labelledby="tab-quotes" data-panel="quotes" hidden></div>
+      <div id="panel-requests" role="tabpanel" aria-labelledby="tab-requests" data-panel="requests" hidden></div>
+      <div id="panel-payments" role="tabpanel" aria-labelledby="tab-payments" data-panel="payments" hidden></div>
+    </div>
+  </section>
+</main>
+
+<dialog data-quote-dialog aria-labelledby="quote-dialog-title">
+  <div class="modal__head">
+    <h2 id="quote-dialog-title">Quote</h2>
+    <button class="modal__close" type="button" data-close aria-label="Close">&times;</button>
+  </div>
+  <div class="modal__body" data-quote-body></div>
+  <div class="modal__foot" data-quote-actions></div>
+</dialog>
+
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Payment status - Atrio</title>
+<meta name="description" content="Your Atrio payment status.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body>
+<header class="nav" data-nav></header>
+<main id="main" class="wrap auth">
+  <div data-checkout-status>
+    <h1 class="h-lg">Checking your payment</h1>
+    <p class="lede">One moment while we confirm this with Stripe.</p>
+    <div class="skeleton skeleton--row" aria-hidden="true"></div>
+  </div>
+</main>
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/checkout.js"></script>
+</body>
+</html>

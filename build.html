@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Build your project - Atrio</title>
+<meta name="description" content="Select the pieces your project needs, see the estimate update as you go, and send it to Atrio for a written quote.">
+<meta name="theme-color" content="#12554a">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="/build">
+<meta property="og:title" content="Build your project - Atrio">
+<meta property="og:description" content="Choose your pieces, watch the estimate, send it for a written quote.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body class="has-dock">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav" data-nav></header>
+
+<main id="main">
+  <div class="wrap page-head">
+    <h1 class="h-lg">Build your project</h1>
+    <p class="lede">Pick what you need. Selecting things never charges you.</p>
+  </div>
+
+  <section class="section">
+    <div class="wrap builder">
+      <div>
+        <div data-catalog></div>
+      </div>
+
+      <aside class="builder__aside" aria-label="Your selection">
+        <div class="card card--soft">
+          <h2 class="h-sm">Your project</h2>
+          <div data-summary>
+            <p class="card__meta">Nothing selected yet.</p>
+          </div>
+          <div class="summary__total">
+            <span>Estimated total</span>
+            <span class="price" data-total aria-live="polite">$0</span>
+          </div>
+          <p class="card__meta" data-estimate-note>
+            An estimate, not a quote. Atrio confirms the final price in writing.
+          </p>
+          <button class="btn btn--primary btn--block" type="button" data-continue disabled>
+            Continue to project request
+          </button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--mist" id="request" data-request-section hidden>
+    <div class="wrap narrow">
+      <h2>Tell us about the project</h2>
+      <p class="lede">Only what we need to write you an accurate quote.</p>
+
+      <form data-request-form novalidate>
+        <div data-form-notice></div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field__label" for="contact_name">Your name</label>
+            <input class="input" id="contact_name" name="contact_name" type="text"
+                   autocomplete="name" required>
+            <span class="field__error" data-error-for="contact_name"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="contact_email">Email</label>
+            <input class="input" id="contact_email" name="contact_email" type="email"
+                   autocomplete="email" inputmode="email" required>
+            <span class="field__error" data-error-for="contact_email"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="title">Project name</label>
+          <input class="input" id="title" name="title" type="text" required
+                 placeholder="Bakery ordering site">
+          <span class="field__error" data-error-for="title"></span>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="description">What should it do?</label>
+          <span class="field__hint">What the project is for, who uses it, and anything that must be included.</span>
+          <textarea class="textarea" id="description" name="description" required minlength="20"></textarea>
+          <span class="field__error" data-error-for="description"></span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field__label" for="timeline">Rough timeline <span class="card__meta">(optional)</span></label>
+            <input class="input" id="timeline" name="timeline" type="text" placeholder="Before the spring season">
+            <span class="field__error" data-error-for="timeline"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="budget_range">Budget range <span class="card__meta">(optional)</span></label>
+            <input class="input" id="budget_range" name="budget_range" type="text" placeholder="$2,000 - $5,000">
+            <span class="field__error" data-error-for="budget_range"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="reference_url">A site you like <span class="card__meta">(optional)</span></label>
+          <input class="input" id="reference_url" name="reference_url" type="url" inputmode="url"
+                 placeholder="https://example.com">
+          <span class="field__error" data-error-for="reference_url"></span>
+        </div>
+
+        <div class="card panel-card">
+          <h3 class="h-sm">What you selected</h3>
+          <div data-form-summary></div>
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">Send project request</button>
+        <p class="card__meta mt-05">
+          Sending this does not charge you. Atrio reviews it and replies with a written quote.
+        </p>
+      </form>
+
+      <div data-request-done hidden></div>
+    </div>
+  </section>
+</main>
+
+<div class="dock" data-dock hidden>
+  <div class="dock__total">
+    <strong class="price" data-dock-total>$0</strong>
+    <span data-dock-count>0 selected</span>
+  </div>
+  <button class="btn btn--primary" type="button" data-dock-continue>Continue</button>
+</div>
+
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/build.js"></script>
+</body>
+</html>

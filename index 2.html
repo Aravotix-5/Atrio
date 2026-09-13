@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atrio - custom websites and software, priced by the piece</title>
+<meta name="description" content="Atrio builds custom websites, web apps and software. Choose only the parts you need, see an estimate as you go, and get a written quote before anything is charged.">
+<meta name="theme-color" content="#12554a">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="/">
+<meta property="og:title" content="Atrio - custom websites and software, priced by the piece">
+<meta property="og:description" content="Choose only the parts you need. See an estimate as you go. Get a written quote before anything is charged.">
+<meta property="og:type" content="website">
+<!-- Add /images/og-image.png (1200x630) and point this at it when you have artwork. -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/css/atrio.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav" data-nav></header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <h1>Pay for the parts you need.</h1>
+        <p class="hero__lede">
+          Atrio builds custom websites, web apps and software. Instead of picking a package
+          full of things you will never use, you choose the individual pieces and watch the
+          estimate as you go.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="/build">Build your project</a>
+          <a class="btn btn--quiet" href="/services">See all services</a>
+        </div>
+        <p class="card__meta mt-1">
+          Nothing is charged until you accept a written quote.
+        </p>
+      </div>
+
+      <div class="picker" data-hero-picker>
+        <div class="picker__head">
+          <h2 class="h-sm flush">Try it</h2>
+          <p>Tap a few pieces. The estimate updates as you go.</p>
+        </div>
+        <ul class="picker__list" data-hero-list>
+          <li><div class="skeleton skeleton--row" aria-hidden="true"></div></li>
+          <li><div class="skeleton skeleton--row" aria-hidden="true"></div></li>
+          <li><div class="skeleton skeleton--row" aria-hidden="true"></div></li>
+        </ul>
+        <dl class="picker__total">
+          <dt>Estimated so far</dt>
+          <dd class="price" data-hero-total aria-live="polite">$0</dd>
+        </dl>
+        <div class="picker__foot">
+          <a class="btn btn--primary btn--block" href="/build">Continue in the full builder</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="section__intro">
+        <h2>How a project runs</h2>
+        <p class="lede">Four steps, and you see the price in writing before any money moves.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Choose your pieces</h3>
+          <p>Work through the builder and select what your project actually needs.</p>
+        </li>
+        <li>
+          <h3>Send the request</h3>
+          <p>Tell us what you are making. We read it and come back with questions if anything is unclear.</p>
+        </li>
+        <li>
+          <h3>Get a written quote</h3>
+          <p>We confirm the scope and the final price. The builder total is only an estimate until this point.</p>
+        </li>
+      </ol>
+      <p class="mt-2">
+        <strong>Then you accept and pay.</strong> Payment happens on Stripe's secure checkout page,
+        and the project starts once it clears.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__intro">
+        <h2>What you can choose from</h2>
+        <p class="lede">Every service is listed with its own price. Mix them however you like.</p>
+      </div>
+      <div class="grid grid--3" data-category-grid>
+        <div class="skeleton skeleton--row" aria-hidden="true"></div>
+        <div class="skeleton skeleton--row" aria-hidden="true"></div>
+        <div class="skeleton skeleton--row" aria-hidden="true"></div>
+      </div>
+      <p class="mt-2"><a class="btn btn--quiet" href="/services">Browse the full service list</a></p>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap">
+      <div class="section__intro">
+        <h2>Recent work</h2>
+        <p class="lede">Project write-ups will appear here as work ships.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="slot"><p class="flush">Project spotlight</p><small>Add a screenshot, the problem and what was built.</small></div>
+        <div class="slot"><p class="flush">Project spotlight</p><small>Replace this placeholder from the admin dashboard content later.</small></div>
+        <div class="slot"><p class="flush">Project spotlight</p><small>Keep only real, permitted client work here.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid grid--2">
+      <div>
+        <h2>How payment works</h2>
+        <p>
+          Card details are entered on Stripe's own checkout page. They never reach Atrio's
+          servers, and no card number, CVV or bank login is ever stored here. Atrio keeps
+          only the amount, the payment status and Stripe's reference ids.
+        </p>
+        <p>Payment is only unlocked after you have seen and accepted a written quote.</p>
+      </div>
+      <div>
+        <h2>Native apps, described honestly</h2>
+        <p>
+          A responsive website is not an App Store app. Atrio lists them separately: a
+          responsive site, an installable progressive web app, and native iOS or Android
+          apps, which are a much larger piece of work.
+        </p>
+        <p><a href="/services">See how each one is described</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="wrap center">
+      <h2>Ready to price something out?</h2>
+      <p class="lede">Start selecting, and keep the estimate in front of you the whole way.</p>
+      <p><a class="btn btn--primary" href="/build">Build your project</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" data-foot></footer>
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/home.js"></script>
+</body>
+</html>
